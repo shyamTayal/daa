@@ -46,7 +46,7 @@ cd daa
 g++ rotated.cpp -o rotated
 ./rotated
 ```
-#### Output
+#### Output (Sample)
 ```
 Randomly Generated and rotated array Details:
 Size : 6
