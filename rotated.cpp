@@ -25,10 +25,9 @@ int main(){
         cout<<arr[i]<<" ";
     }
     cout<<"\n";
-
+    
     //Here is the function call
     cout<<"Pivot : \n"<<findK(arr,N);
-
 
 }
 

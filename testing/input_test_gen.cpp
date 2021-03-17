@@ -6,9 +6,9 @@ void rotatearr(int [],int ,int );
 int main(){
     freopen("input_testcase.txt","w",stdout);
     srand(time(0));
-    int t = rand()%1000 + 5;
+    int t = 500;
     cout<<t<<"\n";
-    int T = (int)(t/17)*10 + t%17;
+    int T = 30;
     int MAX_SIZE = (rand()%20) + 1;
     while(T--){
         int N = rand()%MAX_SIZE + 2;            //Atleast 2 elements should be there for the array to be viable
@@ -28,12 +28,10 @@ int main(){
         }
         cout<<"\n";
     }
-
-
-    MAX_SIZE = (rand()%1000) + 1;
-    T = (int)(t/17)*6;
+    T = 70;
+    MAX_SIZE = (rand()%500) + 1;
     while(T--){
-        int N = rand()%MAX_SIZE + 100;            //Medium Size vaue of N
+        int N = rand()%MAX_SIZE + 100;            //Atleast 2 elements should be there for the array to be viable
         cout<<N<<"\n";
         int arr[N];
         for(int i=0;i<N;++i){
@@ -51,11 +49,68 @@ int main(){
         cout<<"\n";
     }
 
-
-    MAX_SIZE = (rand()%1000000) + 1;
-    T = (int)(t/17);
+    MAX_SIZE = (rand()%2000) + 1;
+    T = 100;
     while(T--){
-        int N = rand()%MAX_SIZE + 1000;            //Large Size Value of N
+        int N = rand()%MAX_SIZE + 1000;            //Medium Size vaue of N
+        cout<<N<<"\n";
+        int arr[N];
+        for(int i=0;i<N;++i){
+            arr[i] = rand()%100000;
+        }
+        sort(arr,arr+N);
+
+        int k = rand()%N;
+
+        rotatearr(arr,N,k);
+
+        for(int i=0;i<N;++i){
+            cout<<arr[i]<<" ";
+        }
+        cout<<"\n";
+    }
+    T = 100;
+    while(T--){
+        int N = rand()%MAX_SIZE + 3000;            //Medium Size vaue of N
+        cout<<N<<"\n";
+        int arr[N];
+        for(int i=0;i<N;++i){
+            arr[i] = rand();
+        }
+        sort(arr,arr+N);
+
+        int k = rand()%N;
+
+        rotatearr(arr,N,k);
+
+        for(int i=0;i<N;++i){
+            cout<<arr[i]<<" ";
+        }
+        cout<<"\n";
+    }
+    T = 100;
+    while(T--){
+        int N = rand()%MAX_SIZE + 6000;            //Medium Size vaue of N
+        cout<<N<<"\n";
+        int arr[N];
+        for(int i=0;i<N;++i){
+            arr[i] = rand();
+        }
+        sort(arr,arr+N);
+
+        int k = rand()%N;
+
+        rotatearr(arr,N,k);
+
+        for(int i=0;i<N;++i){
+            cout<<arr[i]<<" ";
+        }
+        cout<<"\n";
+    }
+    MAX_SIZE = (rand()%10000) + 1;
+    T = 100;
+    while(T--){
+        int N = rand()%MAX_SIZE + 10000;            //Large Size Value of N
         cout<<N<<"\n";
         int arr[N];
         for(int i=0;i<N;++i){
