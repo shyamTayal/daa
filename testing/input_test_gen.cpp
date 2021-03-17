@@ -4,13 +4,13 @@ using namespace std;
 void rotatearr(int [],int ,int );
 
 int main(){
-    freopen("input_test_10.txt","w",stdout);
+    freopen("input_testcase.txt","w",stdout);
     srand(time(0));
-    int MAX_TEST = rand()%10;
-    int MAX_SIZE = (rand()%100000)/MAX_TEST;
-    int t = MAX_TEST;
+    int t = rand()%1000 + 5;
     cout<<t<<"\n";
-    while(t--){
+    int T = (int)(t/17)*10 + t%17;
+    int MAX_SIZE = (rand()%20) + 1;
+    while(T--){
         int N = rand()%MAX_SIZE + 2;            //Atleast 2 elements should be there for the array to be viable
         cout<<N<<"\n";
         int arr[N];
@@ -29,13 +29,11 @@ int main(){
         cout<<"\n";
     }
 
-    freopen("input_test_1000.txt","w",stdout);        //Medium Test Cases
-    MAX_TEST = rand()%1000;
-    MAX_SIZE = (rand()%100000)/MAX_TEST;
-    t = MAX_TEST;
-    cout<<t<<"\n";
-    while(t--){
-        int N = rand()%MAX_SIZE + 2;            //Atleast 2 elements should be there for the array to be viable
+
+    MAX_SIZE = (rand()%1000) + 1;
+    T = (int)(t/17)*6;
+    while(T--){
+        int N = rand()%MAX_SIZE + 100;            //Medium Size vaue of N
         cout<<N<<"\n";
         int arr[N];
         for(int i=0;i<N;++i){
@@ -53,13 +51,11 @@ int main(){
         cout<<"\n";
     }
 
-    freopen("input_test_100000.txt","w",stdout);          //Large Test Cases
-    MAX_TEST = rand()%100000;
-    MAX_SIZE = (rand()%1000000)/MAX_TEST;
-    t = MAX_TEST;
-    cout<<t<<"\n";
-    while(t--){
-        int N = rand()%MAX_SIZE + 2;            //Atleast 2 elements should be there for the array to be viable
+
+    MAX_SIZE = (rand()%1000000) + 1;
+    T = (int)(t/17);
+    while(T--){
+        int N = rand()%MAX_SIZE + 1000;            //Large Size Value of N
         cout<<N<<"\n";
         int arr[N];
         for(int i=0;i<N;++i){

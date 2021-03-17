@@ -6,7 +6,7 @@ int findK(int [],int);
 
 int main(){
 
-    freopen("input_test_10.txt",'r',stdin);
+    freopen("input_testcase.txt","r",stdin);
     int t;
     cin>>t;
     while(t--){
