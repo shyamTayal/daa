@@ -78,7 +78,7 @@ function findPivot(a[], size):
 The second algorithm uses divide and conquer approach. Here also we find the index of minimum element, but using Binary Search.
 \newline The minimum element is the only element whose previous is greater than it.
 \newline If there is no previous element, then there is no rotation (first element is minimum).
-\newline We check this condition for middle element by comparing it with (mid-1)’th and (mid+1)’th elements.
+\newline We check this condition for middle element by comparing it with (mid)’th and (mid+1)’th elements.
 \newline If the minimum element is not at the middle (neither mid nor mid + 1), then minimum element lies in either left half or right half.
 \newline If middle element is smaller than last element, then the minimum element lies in left half
 \newline Else minimum element lies in right half.
@@ -111,7 +111,7 @@ function findPivot(arr[], N):
  \caption{Eficient Algorithm(Divide and Conquer)}
 \end{algorithm}
 \bigskip
-
+\newpage
 
 
 \section{Algorithm Analysis}
@@ -119,25 +119,25 @@ function findPivot(arr[], N):
 \subsection{Time Complexity}
     \subsubsection{Algorithm 1}
         \begin{itemize}
-            Best Case:  $ \Omega(1$)\\
-            Average Case: $ \Theta((n)$) \\
-            Worst Case: O($(n)$)\\
+            Best Case:  $ \Omega(n) $\\
+            Average Case: $\Theta(n)$ \\
+            Worst Case: O(n)\\
         \end{itemize}
     \subsubsection{Algorithm 2}
         \begin{itemize}
             Best Case:  $ \Omega(1$)\\
-            Average Case: $ \Theta(log(n)$) \\
+            Average Case: $ \Theta(log(n))$ \\
             Worst Case: O($log(n)$)\\
         \end{itemize}
 
 \subsection{Space Complexity}
     \subsubsection{Algorithm 1}
         \begin{itemize}
-            O($(1)$)\\
+            O(1)\\
         \end{itemize}
     \subsubsection{Algorithm 2}
         \begin{itemize}
-            O($(1)$)\\
+            O(1)\\
         \end{itemize}
 
 Random number generator has been used for filling the arrays in every case.
@@ -145,29 +145,26 @@ Following graphs compare the times taken by the Linear Search as well as Divide 
 % \newpage
 
 
-% \begin{figure}[h!]
-% \centerline{\includegraphics[width=80mm]{tc_naive.png}}
-% \caption{Algorithm 1 VS n
-% }
-% \centerline{\textit{ }}
-% \label{fig:graph}
-% \end{figure}
+\begin{figure}[h!]
+\centerline{\includegraphics[width=80mm]{tc_naive.png}}
+\caption{Algorithm 1 VS N}
+\centerline{\textit{ }}
+\label{fig:graph}
+\end{figure}
 
-% \begin{figure}[h!]
-% \centerline{\includegraphics[width=80mm]{tc_linear.png}}
-% \caption{Algorithm 2 VS N Linear Scale
-% }
-% \centerline{\textit{ }}
-% \label{fig:graph}
-% \end{figure}
+\begin{figure}[h!]
+\centerline{\includegraphics[width=80mm]{tc_linear.png}}
+\caption{Algorithm 2 VS N Linear Scale}
+\centerline{\textit{ }}
+\label{fig:graph}
+\end{figure}
 
-% \begin{figure}[h!]
-% \centerline{\includegraphics[width=80mm]{tc_log.png}}
-% \caption{Algorithm 2 VS N logorithmic Scale
-% }
-% \centerline{\textit{ }}
-% \label{fig:graph}
-% \end{figure}
+\begin{figure}[h!]
+\centerline{\includegraphics[width=80mm]{tc_log.png}}
+\caption{Algorithm 2 VS N logarithmic Scale}
+\centerline{\textit{ }}
+\label{fig:graph}
+ \end{figure}
 \newpage
 
 \section{Conclusion}
@@ -175,8 +172,7 @@ The more efficient algorithm, as we can see, turns out to be the 2nd algorithm (
 
 \begin{thebibliography}{00}
 \bibitem{b1}https://en.wikipedia.org/wiki/Binary\_search\_algorithm
-\bibitem{b2}https://www.geeksforgeeks.org/array-rotation/
-\bibitem{b3}https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/
+\bibitem{b2}https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/
 \end{thebibliography}
 
 \end{document}
