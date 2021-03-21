@@ -3,9 +3,9 @@
 *Team Members*
 |   Enrollment No.  |   Name   | GithubId |
 |   --------------  |   ----   | -------- |
-|    IIT2019006  |   Amanjeet Kumar | Amanjeetk11 |
-|    IIT2019007  |   Aditya Raj | Adityahulk |
-|    IIT2019008  |   Shyam Tayal | shyamTayal |
+|    IIB2019006  |   Amanjeet Kumar | Amanjeetk11 |
+|    IIB2019007  |   Aditya Raj | Adityahulk |
+|    IIB2019008  |   Shyam Tayal | shyamTayal |
 
 
 *Group No-*"3"
