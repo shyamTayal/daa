@@ -26,11 +26,11 @@ git clone https://github.com/shyamTayal/daa
 
 #### Personalised Initialization Method (optional)
 If you want to generate your own randomly generated tescases , there is a C++ file for the same that generates randomly generated testcases in above mentioned file format.
-
+```
 cd daa/testing
 g++ input_test_gen.cpp
 ./a.out         
-
+```
 There is a Testcase file generated that has 5 different magnitudes of testcases :
  - input_testcase.txt
 
@@ -39,26 +39,26 @@ However the above file is pregenerated and above step can be skipped
 ---
 ### Run the Code
 For one random testcase
-
+```
 cd daa
 g++ rotated.cpp -o rotated
 ./rotated
-
+```
 #### Output (Sample)
-
+```
 Randomly Generated and rotated array Details:
 Size : 6
 Elements : 4 6 7 1 2 3
 Pivot :
 3
-
+```
 ---
 ### Testing
-
+```
 cd daa/testing
 g++ rotated_testing.cpp -o rotated_tesing
 ./rotated_testing
-
+```
 Above Commands will generate an Output file ('output_time.csv') , that contains the comma seperated values for each testcase of Size of array and No. of comparisons done.
 
 ---
